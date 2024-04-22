@@ -1,0 +1,229 @@
+#columns {
+    columns: 2;
+    column-gap: 10px;
+    column-rule: 1px solid black;
+    width: 100%;
+    display: inline-flex;
+}
+
+/*
+body{
+    width: 256px;
+    border-color: black;
+    border-radius: 5px;
+}
+*/
+
+body{
+    background-color: #8d97a0;
+    border-radius: 10px;
+    width: 400px;
+    height: 275px;
+    font-family: sans-serif;
+}
+
+#col1,#col2{
+    display: inline-grid;
+}
+
+#status, #time-worked {
+    text-align: center;
+}
+
+form{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ename, #clock {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px auto auto auto;
+}
+#col1 {
+    width: 50%;
+}
+#col2 {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    height:250px;
+}
+
+#info {
+    background-color: #beddf7;
+    width: 50%;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    padding: 6px;
+    text-align: center;
+    border: #efefef 5px;
+    border-style: double;
+    height: 77px;
+    /*width: 202px;*/
+    margin-bottom: 10px;
+    margin-top:0px;
+}
+
+
+#clock-in{
+    background-color: lightgreen;
+}
+#clock-in:hover{
+    background-color: rgb(120, 196, 120);
+}
+
+#clock-out{
+    background-color: lightcoral;
+}
+#clock-out:hover{
+    background-color: rgb(194, 103, 103);
+}
+
+#new_emp:hover{
+    background-color: rgb(194, 191, 191);
+}
+
+button {
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 7px;
+    /*border-color: inherit;*/
+    border:none;
+    box-shadow: 0 2px #999;
+}
+button:active {
+    /*background-color: #3e8e41;*/
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+select {
+    border-radius: 3px;
+    margin-top: 2px;
+}
+
+select::-webkit-scrollbar {
+    width: 10px;
+}
+
+select::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 20px;
+}
+
+select::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 20px;
+}
+
+#buildings {
+    height:20px;
+}
+
+#employees {
+    height: 185px;
+    border-radius: 5px;
+}
+
+#status {
+    font-weight: bold;
+    font-size: 15px;
+    display: contents;
+}
+
+
+/* Pop-up window styles */
+.popup,.pin,.api, .addemployee {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.5s;
+}
+
+.popup-content {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1em;
+    width: 400px;
+    max-width: 80%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.popup-header {
+    margin-bottom: 1em;
+}
+.popup-body {
+    margin-bottom: 1em;
+}
+.popup-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.popup-footer button {
+    margin-left: 1em;
+}
+
+.addemployee .popup-header{
+    margin-bottom: 0px;
+}
+/*
+.inline-inputs {
+    display: inline-block;
+}
+*/
+.addemployee input,.addemployee select {
+    display: block;
+}
+
+.addemployee label {
+    font-weight: bold;
+}
+
+/* */
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 10px;
+    border-radius: 8px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #D6ECF3;
+}
+
+.content {
+    /*padding: 0 18px;*/
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.update{
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.content.active{
+    display: contents !important;
+}

@@ -1,0 +1,12 @@
+
+notes.txt
+*.zip
+secrets.js
+*.csv
+Archive/
+Other/
+._.DS_STORE
+.disabled_htaccess
+.htaccess
+.DS_Store
+*.code-workspace
